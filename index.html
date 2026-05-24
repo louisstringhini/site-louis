@@ -107,7 +107,7 @@
             padding: 120px 20px 80px 20px;
             background: linear-gradient(rgba(17, 11, 7, 0.8), rgba(17, 11, 7, 0.9)), url('imagens/fundo-musico.jpg');
             background-size: center 20%;
-            background-position: top;
+            background-position: center top;
             background-attachment: fixed;
             position: relative;
         }
@@ -393,7 +393,47 @@
             section {
                 padding: 60px 20px;
             }
+        } /* --- RESPONSIVIDADE (SEU CÓDIGO ANTIGO) --- */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            section {
+                padding: 60px 20px;
+            }
         }
+
+        /* --- COLE O CÓDIGO NOVO AQUI ABAIXO --- */
+        @media (max-width: 600px) {
+            .hero {
+                padding: 80px 15px 40px 15px;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem;
+                line-height: 1.1;
+                margin-bottom: 15px;
+            }
+            .hero-content p {
+                font-size: 0.95rem;
+                margin-bottom: 25px;
+                padding: 0 10px;
+            }
+            .badge-agenda {
+                font-size: 0.65rem;
+                margin-bottom: 15px;
+            }
+            .btn-main {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+            .btn-secondary {
+                display: none; 
+            }
+        }
+        /* --- FIM DO NOVO CÓDIGO --- */
     </style>
 </head>
 
